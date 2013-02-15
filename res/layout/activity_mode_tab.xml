@@ -1,0 +1,45 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"/>
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone"/>
+
+        <HorizontalScrollView
+	        android:id="@+id/scrollview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/maintab_toolbar_bg" >
+	        
+	        <RadioGroup
+	            android:id="@+id/main_tab"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+	
+<!-- 	   <RadioButton 
+	                android:text="@string/menu_search"
+	                android:drawableTop="@drawable/icon_4_n"
+	                android:id="@+id/radio_button7"
+	                style="@style/main_tab_bottom"/> -->
+	        </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+</TabHost>
